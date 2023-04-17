@@ -10,6 +10,7 @@ Exploring application of computer vision in domain of sonar imaging.
 * [Scene Generation](#generation)
 * [Modelling](#training)
 * [Style Transfer](#nst)
+* [Contrastive Unpaired Translation](#cut)
 * [Evaluation](#eval) 
 * [Results](#results)
 
@@ -25,6 +26,7 @@ This project was made possible with previous contributions referenced below:
 <ol>
   <li> https://github.com/gordicaleksa/pytorch-neural-style-transfer </li>
   <li> https://github.com/mvaldenegro/marine-debris-fls-datasets </li>
+  <li> https://github.com/taesungp/contrastive-unpaired-translation </li> 
 </ol>
 
 ## Tasks <a name="tasks"></a>
@@ -73,12 +75,28 @@ We needed to tune hyperparameters of our style transfer network to get the optim
 
 - Style weight : `3e4`
 - Content weight : `1e7`
+- Candidate layers : `conv4_1`
  
 ### Sample Script
 
 1. Copy content images to the default content image directory: `/data/content-images/`
 2. Copy style images to the default style image directory: `/data/style-images/`
 3. Run `python neural_style_transfer.py --content_img_name <content-img-name> --style_img_name <style-img-name>`
+
+## Contrastive Unpaired Translation <a name="cut"></a> 
+
+One approach for unpaired image to image translation is CUT. Unlike CycleGAN, which uses a cycle consistency loss to enforce consistency between the translated images and the original input images it uses contrastive loss. 
+
+### Methodology 
+
+CUT is encoder decoder based model where both are trained to encode and decode images from each domain and then we use contrastive loss to encourage similarity. 
+The method encourages two elements (corresponding patches) to map to a similar point in a learned feature space, relative to other elements (other patches) in the dataset, referred to as negatives.
+
+The contrastive loss encourages the model to preserve the content of the original image by minimizing the distance between the original and translated images in the shared latent space. They also experimented with high resolution single image translation which gave the best results for our usecase. 
+
+### Sample Script
+
+Right now the code for training sinCUT and inference is provided in [this](https://colab.research.google.com/drive/1udFsyuJAWpLWp2QLZKwhfJyYhfDeMJSo) notebook. 
 
 ## Evaluation <a name="eval"></a> 
 
