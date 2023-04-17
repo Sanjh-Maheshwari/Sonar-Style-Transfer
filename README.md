@@ -133,8 +133,8 @@ Here are some results along with their style images :
 
 <p align="center">
 <img src="Data/CUT/g1.png" width="400px">
-<img src="Data/CUT/s2.png" width="267px">
+<img src="Data/CUT/s2.png" width="400px">
 
 <img src="Data/CUT/g2.png" width="400px">
-<img src="Data/CUT/s2.png" width="267px">
+<img src="Data/CUT/s2.png" width="400px">
 </p>
