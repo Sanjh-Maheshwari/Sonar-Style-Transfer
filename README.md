@@ -113,6 +113,8 @@ Since the SONAR images are in themselves very varied and so manually comparing t
 
 Here are some results along with their style images :
 
+### NST  
+
 <p align="center">
 <img src="data/examples/figures/figures_ben_giles_o_lbfgs_i_content_h_500_m_vgg19_cw_100000.0_sw_30000.0_tv_1.0_resized.jpg" width="400px">
 <img src="data/style-images/ben_giles.jpg" width="267px">
@@ -125,4 +127,14 @@ Here are some results along with their style images :
 
 <img src="data/examples/figures/figures_vg_starry_night_w_350_m_vgg19_cw_100000.0_sw_30000.0_tv_1.0_resized.jpg" width="400px">
 <img src="data/style-images/vg_starry_night_resized.jpg" width="267px">
+</p>
+
+### CUT 
+
+<p align="center">
+<img src="Data/CUT/g1.png" width="400px">
+<img src="Data/CUT/s1.png" width="267px">
+
+<img src="Data/CUT/g2.png" width="400px">
+<img src="Data/CUT/s1.png" width="267px">
 </p>
