@@ -36,8 +36,9 @@ We perform following tasks and also provide the code for the same :
 - [:heavy_check_mark:] [Scene Generation : **Blender**](/Scene%20Generation)  
 - [:heavy_check_mark:] [Self Supervised Learning : **RotNet**](/Modelling)  
 - [:heavy_check_mark:] [Style Transfer : **VGG19**](/Style%20Transfer) 
+- [:heavy_check_mark:] [Image Translation : **SinCUT**](/Sin%20Cut) 
 - [:heavy_check_mark:] [Evaluation : **FID**](/Evaluation)  
-- [:white_circle:] [Multi Image Style Transfer](/)  
+- [:white_circle:] [Multi Image Style Transfer](/)
 
 Further tasks will be added in the future according to progress of the project. 
 
@@ -116,20 +117,19 @@ Here are some results along with their style images :
 ### NST  
 
 <p align="center">
-<img src="data/examples/figures/figures_ben_giles_o_lbfgs_i_content_h_500_m_vgg19_cw_100000.0_sw_30000.0_tv_1.0_resized.jpg" width="400px">
-<img src="data/style-images/ben_giles.jpg" width="267px">
 
-<img src="data/examples/figures/figures_wave_crop_o_lbfgs_i_content_h_500_m_vgg19_cw_100000.0_sw_30000.0_tv_1.0_resized.jpg" width="400px">
-<img src="data/style-images/wave_crop.jpg" width="267px">
+<img src="Data/NST/g1.png" width="400px">
+<img src="Data/NST/s2.png" width="400px">
 
-<img src="data/examples/figures/figures_vg_wheat_field_w_350_m_vgg19_cw_100000.0_sw_300000.0_tv_1.0_resized.jpg" width="400px">
-<img src="data/style-images/vg_wheat_field_cropped.jpg" width="267px">
+<img src="Data/NST/g2.png" width="400px">
+<img src="Data/NST/s1.png" width="400px" height="230px">
 
-<img src="data/examples/figures/figures_vg_starry_night_w_350_m_vgg19_cw_100000.0_sw_30000.0_tv_1.0_resized.jpg" width="400px">
-<img src="data/style-images/vg_starry_night_resized.jpg" width="267px">
+<img src="Data/NST/g3.jpg" width="400px">
+<img src="Data/NST/s2.png" width="400px">
+
 </p>
 
-### CUT 
+### SinCUT 
 
 <p align="center">
 <img src="Data/CUT/g1.png" width="400px">
